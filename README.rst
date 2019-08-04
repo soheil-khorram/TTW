@@ -20,7 +20,7 @@ Generalized time warping (GTW) is a DTW averaging algorithm that is able to alig
 avg_gtw.m provides a function for GTW averaging. The function takes two inputs, X and max_iter_num, and generates three outputs,
 y, XS and tau. 
 
-*Inputs
+* Inputs
       - X: input time-series; it is an N-by-T matrix where N is the number of time-series and T is the length of them. Note that this function assumes all time-series have the same length. If your time-series have different lengths, use an interpolation technique (e.g., spline function) to make them equi-length.
       - max_iter_num: maxumum number of iterations in our gradient based optimization algorithm
 
