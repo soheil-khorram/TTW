@@ -22,7 +22,7 @@ y, XS and tau.
 
 * Inputs
       - X: input time-series; it is an N-by-T matrix where N is the number of time-series and T is the length of them. Note that this function assumes all time-series have the same length. If your time-series have different lengths, use an interpolation technique (e.g., spline function) to make them equi-length.
-      - max_iter_num: maxumum number of iterations in our gradient based optimization algorithm
+      - max_iter_num: maxumum number of iterations in our gradient based optimization algorithm.
 
 * Outputs
       - y: final average signal. It is a 1-by-T vector.
@@ -38,10 +38,9 @@ TTW offers another solution to the problem of aligning multiple time-series. It 
 avg-ttw is the function that we designed to perform the averaging using the TTW algorithm. It takes Three inputs (X, order, max_iter_num) and returns three outputs (y, XS, tau):
 
 * Inputs
-
       - X: input time-series; it is an N-by-T matrix where N is the number of time-series and T is the length of them. Note that this algorithm assumes all time-series have the same length. If your time-series have different lengths, use an interpolation technique (e.g., spline function) to make them equi-length.
       - order: order of the DST used to model the warping functions. With higher order, we consider more details of the input signals and we learn a more complex warping functions. However, a high order value will caouse a more comples optimization landscape, which increases the likelihood of converging to a weak local optimum point.
-      - max_iter_num: maxumum number of iterations in our gradient based optimization algorithm
+      - max_iter_num: maxumum number of iterations in our gradient based optimization algorithm.
 
 * Outputs
       - y: final average signal. It is a 1-by-T vector.
