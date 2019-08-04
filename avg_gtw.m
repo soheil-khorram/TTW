@@ -8,7 +8,7 @@ function [y, XS, tau] = avg_gtw(X, max_iter_num)
     %        this algorithm assumes all time-series have the same length. 
     %        If your time-series have different lengths, use an interpolation
     %        technique (e.g., spline function) to make them equi-length.
-    %    max_iter_num: maxumum number of iterations in our gradient based
+    %    max_iter_num: maximum number of iterations in our gradient-based
     %                  optimization algorithm
     % 
     % Outputs
