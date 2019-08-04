@@ -1,14 +1,30 @@
 .. -*- mode: rst -*-
 
 Trainable Time Warping (TTW)
-===========================
+============================
 
-Python implementation of TTW, a time warping algorithm that estimates the DTW averaging solution in linear time and space complexity using a new deformable convolutional kernel, shifted sinc kernel.
+Matlab implementation of TTW, a time warping algorithm that estimates the DTW averaging solution in linear time and space complexity using a new deformable convolutional kernel, shifted sinc kernel.
 
 .. image:: ttw_results.png
 
-This repository contains the MATLAB code of three dynamic time warping (DTW) averaging algorithms: GTW, TTW and FLTW. All these algorithms have linear time and space complexity with respect to the length and the number of input time-series. Details of these algorithms have been explained in:
+What is this repository?
+------------------------
 
-Khorram S., McInnis M., Provost E. M., "Trainable Time Warping: Aligning Time-Series in the Continuous-Time Domain", ICASSP, 2019.
+This repository contains the MATLAB code of three dynamic time warping (DTW) averaging algorithms: generalized time warping (GTW) [1], trainable time warping (TTW) [2] and fast learnable time warping (FLTW) [2]. All these algorithms have linear time and space complexity with respect to the length and the number of input time-series. 
 
 
+References
+----------
+
+.. [1] Feng Zhou and Fernando De la Torre,
+       *“Generalized time warping for multi-modal alignment of human motion”*,
+       CVPR, 2012.
+
+.. [2] Soheil Khorram, Melvin McInnis and Emily Mower Provost,
+       *“Trainable Time Warping: Aligning Time-Series in the Continuous-Time Domain”*,
+       ICASSP, 2019. [`PDF <https://arxiv.org/pdf/1903.09245.pdf>`_]
+
+Author
+------
+
+- Soheil Khorram, 2019
