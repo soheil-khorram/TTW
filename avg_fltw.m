@@ -10,11 +10,11 @@ function [y, XS, tau] = avg_fltw(X, order, max_iter_num)
     %        technique (e.g., spline function) to make them equi-length.
     %     order: order of the DST used to model the warping functions. With
     %            higher order, we consider more details of the input signals 
-    %            and we learn a more complex warping functions. However, a 
-    %            high order value will caouse a more comples optimization
+    %            and we learn more complex warping functions. However, a 
+    %            high order value will cause a more complex optimization
     %            landscape, which increases the likelihood of converging to
     %            a weak local optimum point.
-    %    max_iter_num: maxumum number of iterations in our gradient based
+    %    max_iter_num: maximum number of iterations in our gradient-based
     %                  optimization algorithm
     % 
     % Outputs
