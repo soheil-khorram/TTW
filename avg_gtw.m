@@ -8,12 +8,6 @@ function [y, XS, tau] = avg_gtw(X, max_iter_num)
     %        this algorithm assumes all time-series have the same length. 
     %        If your time-series have different lengths, use an interpolation
     %        technique (e.g., spline function) to make them equi-length.
-    %     order: order of the DST used to model the warping functions. With
-    %            higher order, we consider more details of the input signals 
-    %            and we learn a more complex warping functions. However, a 
-    %            high order value will caouse a more comples optimization
-    %            landscape, which increases the likelihood of converging to
-    %            a weak local optimum point.
     %    max_iter_num: maxumum number of iterations in our gradient based
     %                  optimization algorithm
     % 
