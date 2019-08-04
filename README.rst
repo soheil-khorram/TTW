@@ -17,6 +17,16 @@ GTW
 
 Generalized time warping (GTW) is a DTW averaging algorithm that is able to align multiple time-series with linear complexity in the length and the number of time-series [1]. GTW approximates the optimal temporal warping by linearly combining a fixed set of monotonic basis functions. Authors of [1] introduced a Gauss-Newton-based procedure to learn the weights of the basis functions. However, in the cases where the temporal relationship between the time-series is complex, GTW requires a large number of complex basis functions to be effective; defining these basis functions is very difficult [2].
 
+avg_gtw.m provides a function for GTW averaging. The function takes two inputs, X and max_iter_num, and generates three outputs,
+y, XS and tau. 
+
+* X: input time-series; it is an N-by-T matrix where N is the number of time-series and T is the length of them. Note that this function assumes all time-series have the same length. If your time-series have different lengths, use an interpolation technique (e.g., spline function) to make them equi-length.
+* max_iter_num: maxumum number of iterations in our gradient based optimization algorithm
+* y: final average signal. It is a 1-by-T vector.
+* XS: synchronized time-series. y is equal to mean(XS, 1).
+* tau: learned warping functions. It is an N-by-T matrix. tau(n, :) is the warping function used to obtain XS(n, :) from X(n, :).
+
+
 TTW
 -----
 
