@@ -18,7 +18,7 @@ References
 
 .. [1] Feng Zhou and Fernando De la Torre,
        *“Generalized time warping for multi-modal alignment of human motion”*,
-       CVPR, 2012.
+       CVPR, 2012. [`PDF <http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.227.6175&rep=rep1&type=pdf>`_]
 
 .. [2] Soheil Khorram, Melvin McInnis and Emily Mower Provost,
        *“Trainable Time Warping: Aligning Time-Series in the Continuous-Time Domain”*,
