@@ -12,6 +12,19 @@ What is this repository?
 
 This repository contains the MATLAB code of three dynamic time warping (DTW) averaging algorithms: generalized time warping (GTW) [1], trainable time warping (TTW) [2] and fast learnable time warping (FLTW) [2]. All these algorithms have linear time and space complexity with respect to the length and the number of input time-series. 
 
+GTW
+-----
+
+Generalized time warping (GTW) is a DTW averaging algorithm that is able to align multiple time-series with linear complexity in the length and the number of time-series [1]. GTW approximates the optimal temporal warping by linearly combining a fixed set of monotonic basis functions. Authors of [1] introduced a Gauss-Newton-based procedure to learn the weights of the basis functions. However, in the cases where the temporal relationship between the time-series is complex, GTW requires a large number of complex basis functions to be effective; defining these basis functions is very difficult [2].
+
+TTW
+-----
+
+
+
+FLTW
+-----
+
 
 References
 ----------
